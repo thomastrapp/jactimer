@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file alias="title_icon.png">res/icons/app_icon.png</file>
+        <file alias="jact_logo.png">res/icons/jact_logo_border.png</file>
+    </qresource>
+</RCC>

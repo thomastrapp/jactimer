@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/buttons">
+        <file alias="pause.svg">res/buttons/media-playback-pause.svg</file>
+        <file alias="play.svg">res/buttons/media-playback-start.svg</file>
+        <file alias="pref.svg">res/buttons/preferences-system.svg</file>
+        <file alias="quit.svg">res/buttons/process-stop.svg</file>
+        <file alias="window.svg">res/buttons/view-fullscreen.svg</file>
+        <file alias="stop.svg">res/buttons/media-playback-stop.svg</file>
+        <file alias="about.svg">res/buttons/help-browser.svg</file>
+    </qresource>
+</RCC>

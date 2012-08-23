@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Jactimer
+Name[de]=Jactimer
+GenericName=Countdown Timer
+GenericName[de]=Zeitschaltuhr
+Comment=A countdown timer with audio support
+Comment[de]=Eine Zeitschaltuhr mit Audio Unterstützung
+Icon=jactimer
+TryExec=jactimer
+Exec=jactimer
+Categories=Qt;Utility;

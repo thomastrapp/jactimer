@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>settingsDialog</class>
+ <widget class="QDialog" name="settingsDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>418</width>
+    <height>381</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TITLE</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QVBoxLayout" name="centralLayout">
+     <item>
+      <widget class="QTabWidget" name="tabs">
+       <property name="accessibleName">
+        <string/>
+       </property>
+       <property name="tabPosition">
+        <enum>QTabWidget::North</enum>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab_timer">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <attribute name="title">
+         <string>Timer</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_14">
+         <property name="margin">
+          <number>9</number>
+         </property>
+         <item>
+          <widget class="QGroupBox" name="groupBox_delay">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="title">
+            <string>Delay</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <layout class="QVBoxLayout" name="vbox_sliders">
+              <item>
+               <widget class="QSlider" name="slSeconds">
+                <property name="maximum">
+                 <number>59</number>
+                </property>
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="tickPosition">
+                 <enum>QSlider::TicksBelow</enum>
+                </property>
+                <property name="tickInterval">
+                 <number>6</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSlider" name="slMinutes">
+                <property name="maximum">
+                 <number>59</number>
+                </property>
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="tickPosition">
+                 <enum>QSlider::TicksBelow</enum>
+                </property>
+                <property name="tickInterval">
+                 <number>6</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSlider" name="slHours">
+                <property name="maximum">
+                 <number>99</number>
+                </property>
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="tickPosition">
+                 <enum>QSlider::TicksBelow</enum>
+                </property>
+                <property name="tickInterval">
+                 <number>6</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="vbox_spinboxes">
+              <item>
+               <layout class="QHBoxLayout" name="grp_seconds">
+                <item>
+                 <widget class="QSpinBox" name="sbSeconds">
+                  <property name="maximum">
+                   <number>59</number>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_seconds">
+                  <property name="text">
+                   <string>Seconds</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="grp_minutes">
+                <item>
+                 <widget class="QSpinBox" name="sbMinutes">
+                  <property name="maximum">
+                   <number>59</number>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_minutes">
+                  <property name="text">
+                   <string>Minutes</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="grp_hours">
+                <item>
+                 <widget class="QSpinBox" name="sbHours">
+                  <property name="buttonSymbols">
+                   <enum>QAbstractSpinBox::UpDownArrows</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_hours">
+                  <property name="text">
+                   <string>Hours</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_message">
+           <property name="title">
+            <string>Message</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_13">
+            <item>
+             <widget class="QPlainTextEdit" name="txtMessage"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_actions">
+        <attribute name="title">
+         <string>Actions</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <item>
+          <widget class="QGroupBox" name="groupBox_ontimerfinished">
+           <property name="title">
+            <string>When Timer has finished...</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_10">
+            <item>
+             <widget class="QCheckBox" name="chkShowTrayMessage">
+              <property name="text">
+               <string>Show System Tray Balloon</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="chkShowDialog">
+              <property name="text">
+               <string>Open a Dialog</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_audioFile">
+              <item>
+               <widget class="QCheckBox" name="chkPlayAudioFile">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>Play Audio File</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_audioFile">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pbTestAudio">
+                <property name="text">
+                 <string>Test</string>
+                </property>
+                <property name="checkable">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="grp_play_audio">
+              <property name="spacing">
+               <number>6</number>
+              </property>
+              <property name="leftMargin">
+               <number>20</number>
+              </property>
+              <item>
+               <widget class="QLineEdit" name="leAudioFile">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pbBrowseAudioFile">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>Select</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_execProg">
+              <item>
+               <widget class="QCheckBox" name="chkExecProg">
+                <property name="text">
+                 <string>Start Program</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_execProg">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pbTestProg">
+                <property name="text">
+                 <string>Test</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="grp_start_prog">
+              <property name="spacing">
+               <number>6</number>
+              </property>
+              <property name="leftMargin">
+               <number>20</number>
+              </property>
+              <item>
+               <widget class="QLineEdit" name="leExecProg"/>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pbBrowseBin">
+                <property name="text">
+                 <string>Select</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <spacer name="tab_actions_spacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_options">
+        <attribute name="title">
+         <string>Options</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_11">
+         <item>
+          <widget class="QGroupBox" name="groupBox_startup">
+           <property name="title">
+            <string>Startup</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QCheckBox" name="chkStartTimer">
+              <property name="text">
+               <string>Run Timer</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="chkShowSettings">
+              <property name="text">
+               <string>Show preferences</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="gBoxSystemTray">
+           <property name="title">
+            <string>TITLE</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_12">
+            <item>
+             <widget class="QCheckBox" name="chkUseTray">
+              <property name="text">
+               <string>Use System Tray</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="chkAnimateTray">
+              <property name="text">
+               <string>Animate System Tray Icon</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_appearance">
+        <attribute name="title">
+         <string>Appearance</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QGroupBox" name="groupBox_colors">
+           <property name="title">
+            <string>Colors</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_17">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_bg_color">
+              <item>
+               <widget class="QLabel" name="label_bg_color">
+                <property name="text">
+                 <string>Background</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="lbBackgroundColor">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pbPickBackgroundColor">
+                <property name="text">
+                 <string>Pick</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_fg_color">
+              <item>
+               <widget class="QLabel" name="label_fg_color">
+                <property name="text">
+                 <string>Foreground</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="lbForegroundColor">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pbPickForegroundColor">
+                <property name="text">
+                 <string>Pick</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_timer_window">
+           <property name="title">
+            <string>Timer Window</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_8">
+            <item>
+             <widget class="QCheckBox" name="chkAlwaysOnTop">
+              <property name="text">
+               <string>Always on top</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="chkWindowSizePos">
+              <property name="text">
+               <string>Save size and position</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="chkHideTaskbar">
+              <property name="text">
+               <string>Hide taskbar entry</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="chkHideDecorations">
+              <property name="text">
+               <string>Hide window decorations</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_colors">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_about">
+        <attribute name="title">
+         <string>About</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <layout class="QVBoxLayout" name="vl_about"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDialogButtonBox" name="buttonBox">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="standardButtons">
+        <set>QDialogButtonBox::Close|QDialogButtonBox::Ok</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>tabs</tabstop>
+  <tabstop>slSeconds</tabstop>
+  <tabstop>slMinutes</tabstop>
+  <tabstop>slHours</tabstop>
+  <tabstop>sbSeconds</tabstop>
+  <tabstop>sbMinutes</tabstop>
+  <tabstop>sbHours</tabstop>
+  <tabstop>txtMessage</tabstop>
+  <tabstop>buttonBox</tabstop>
+  <tabstop>chkShowTrayMessage</tabstop>
+  <tabstop>chkShowDialog</tabstop>
+  <tabstop>chkPlayAudioFile</tabstop>
+  <tabstop>pbTestAudio</tabstop>
+  <tabstop>leAudioFile</tabstop>
+  <tabstop>pbBrowseAudioFile</tabstop>
+  <tabstop>chkExecProg</tabstop>
+  <tabstop>pbTestProg</tabstop>
+  <tabstop>leExecProg</tabstop>
+  <tabstop>pbBrowseBin</tabstop>
+  <tabstop>chkStartTimer</tabstop>
+  <tabstop>chkShowSettings</tabstop>
+  <tabstop>chkUseTray</tabstop>
+  <tabstop>chkAnimateTray</tabstop>
+  <tabstop>pbPickBackgroundColor</tabstop>
+  <tabstop>pbPickForegroundColor</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>settingsDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>194</x>
+     <y>427</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>194</x>
+     <y>225</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>settingsDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>194</x>
+     <y>427</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>194</x>
+     <y>225</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

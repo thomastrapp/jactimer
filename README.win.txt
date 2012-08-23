@@ -1,0 +1,95 @@
+1. About jactimer
+===============================================
+
+  Visit http://www.jactimer.org
+
+  Copyright (C) 2010 Thomas Trapp; mailto: jactimer@thomastrapp.com
+
+  Jactimer is free software; you can redistribute it and/or modify it under the
+  terms of the GNU General Public License as published by the Free Software 
+  Foundation; either version 2 of the License, or (at your option) any later 
+  version.
+
+  Jactimer is  a gui countdown timer written in C++ using the Qt framework. 
+  It uses the phonon backend to play an audio file or start a programm after 
+  the countdown has finished. Window decorations are hidden by default to use
+  up as little desktop space as possible. The system tray icon is animated to 
+  indicate the timer's current progress.
+
+
+2. Install
+===============================================
+
+  On Ubuntu Lucid Lynx 32bit:
+    There's a .deb package you can get at http://www.jactimer.org/.
+  
+  On Windows:
+    There's an installer you can get at http://www.jactimer.org/.
+
+3. Build from scratch
+===============================================
+
+  Dependencies:
+  --------------
+    libqt4-svg (>= 4:4.6.2)
+    libc6 (>= 2.3.6-6~)
+    libgcc1 (>= 1:4.1.1)
+    libphonon4 (>= 4:4.3.0)
+    libqtcore4 (>= 4:4.6.1)
+    libqtgui4 (>= 4:4.5.3)
+    libstdc++6 (>= 4.1.1)
+    phonon (>= 4:4.5.2)
+    If you can't install these via your packet manager, you're out of luck.
+    You'll need to get the Qt-SDK from http://qt.nokia.com/.
+  
+  Build-dependencies:
+  --------------------
+    qt4-qmake
+    qt4-dev-tools
+    libqt4-dev
+    libqt4-phonon-dev
+    (>= Qt 4.6.2)
+    If you can't install these via your packet manager, you're out of luck.
+    You'll need to get the Qt-SDK from http://qt.nokia.com/.
+  
+  Build from scratch in linux:
+  -----------------------------
+    1. Untar and gunzip the source archive:
+        $ tar zxfv jactimer-1.0.tar.gz
+    2. Change into the src/ folder:
+        $ cd jactimer-1.0/src
+    3. Run qmake:
+        $ qmake
+    4. Run make 
+       (This will fail if build-dependencies - see above - are not met):
+        $ make
+    5. If all built without errors you now have the jactimer executable in the
+       current directory:
+        $ ls -lah jactimer
+    6. Run jactimer:
+        $ ./jactimer
+      
+  Optional:
+  ----------
+    7. If you want to install jactimer system wide, 
+       copy the jactimer binary to /usr/bin:
+        $ su cp jactimer /usr/bin
+    8. If you are running a freedesktop.org compliant desktop environment like 
+       Gnome you can copy the jactimer.desktop file to /usr/share/applications/
+       (you'll have a neat entry in the launcher menu):
+        $ su cp freedesktop/jactimer.desktop /usr/share/applications
+    9. Install the jactimer icons:
+        $ su cp freedesktop/jactimer.xpm /usr/share/pixmaps/
+        $ su cp freedesktop/jactimer.png /usr/share/icons/hicolor/48x48/apps/
+  
+  Build in Win:
+  --------------
+    Dependencies (other from Qt): A recent Direct X version (>= 9)
+    Install the Qt SDK (full) from http://qt.nokia.com/
+    Run installed Qt-Creator and open the project file jactimer.pro.
+    
+    Run Build->Build All.
+    
+
+
+Visit http://www.jactimer.org/ and http://www.thomastrapp.com/
