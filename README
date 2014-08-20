@@ -1,7 +1,7 @@
 1. About jactimer
 ===============================================
 
-  Visit http://www.jactimer.org
+  Visit http://thomastrapp.com/
 
   Copyright (C) 2010 Thomas Trapp; mailto: jactimer@thomastrapp.com
 
@@ -17,14 +17,10 @@
   indicate the timer's current progress.
 
 
-2. Install
+2. Install on windows
 ===============================================
 
-  On Ubuntu Lucid Lynx 32bit:
-    There's a .deb package you can get at http://www.jactimer.org/.
-  
-  On Windows:
-    There's an installer you can get at http://www.jactimer.org/.
+  Download the installer here http://thomastrapp.com/jactimer/.
 
 3. Build from scratch
 ===============================================
@@ -92,4 +88,3 @@
     
 
 
-Visit http://www.jactimer.org/ and http://www.thomastrapp.com/
